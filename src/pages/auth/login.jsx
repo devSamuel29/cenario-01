@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function LoginPage() {
   return (
-    <form class="flex flex-col space-y-3 bg-black w-[700px] h-[900px] my-44 mx-auto py-14 px-20 rounded-md justify-center">
-      <h1 class="text-white font-bold text-[40px]">Entrar no Spotify</h1>
+    <form className="flex flex-col space-y-3 bg-black w-[700px] h-[900px] my-44 mx-auto py-14 px-20 rounded-md justify-center">
+      <h1 className="text-white font-bold text-[40px]">Entrar no Spotify</h1>
       <div className="flex flex-col px-20">
         <button
           type="button"
