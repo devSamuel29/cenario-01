@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function LoginPage() {
   return (
-    <form className="flex flex-col space-y-3 bg-black w-[700px] h-[900px] my-44 mx-auto py-14 px-20 rounded-md justify-center">
+    <form className="flex flex-col space-y-3 bg-black w-[700px] h-[900px] mt-7 mx-auto py-14 px-20 rounded-md justify-center">
       <h1 className="text-white font-bold text-[40px]">Entrar no Spotify</h1>
       <div className="flex flex-col px-20">
         <button
@@ -30,7 +30,9 @@ export default function LoginPage() {
           Continuar com um número de telefone
         </button>
       </div>
-      <hr />
+
+      <hr className="border-zinc-400"/>
+
       <div className="flex flex-col px-20">
         <label htmlFor="email-input" className="text-white">
           E-mail ou nome de usuário
@@ -66,7 +68,9 @@ export default function LoginPage() {
           Esqueceu sua senha?
         </Link>
       </div>
-      <hr />
+
+      <hr className="border-zinc-400"/>
+
       <p className="text-zinc-400">
         Não tem uma conta?{" "}
         <Link href="#!" className="text-white underline underline-offset-1">
