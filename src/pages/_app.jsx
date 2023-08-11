@@ -6,7 +6,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <main className={poppins.className}>
+    <main className="{poppins.className}">
       <NextNProgress color="#1DB954" stopDelayMs={0} />
       <Component {...pageProps} />
     </main>
