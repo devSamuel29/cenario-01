@@ -1,29 +1,36 @@
 import Link from "next/link";
+import GoogleIcon from '@mui/icons-material/Google';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import AppleIcon from '@mui/icons-material/Apple';
 
 export default function LoginPage() {
   return (
     <main className="bg-gradient-to-b from-zinc-900">
-      <form className="flex flex-col space-y-3 bg-black w-[550px] h-[850px] mt-7 mx-auto py-14 px-20 rounded-md items-center">
-        <h1 className="text-white font-bold text-[40px] mb-8">
+      <form className="flex flex-col bg-black w-[700px] h-[850px] mt-7 mx-auto py-14 px-20 rounded-md items-center">
+        <h1 className="text-white font-bold text-[40px]">
           Entrar no Spotify
         </h1>
-        <div className="flex flex-col space-y-2 px-16">
+
+        <div className="flex flex-col space-y-2 m-10 px-16">
           <button
             type="button"
-            className="text-white font-semibold border-2 border-zinc-400 rounded-3xl p-1 hover:border-white"
+            className="text-white font-semibold border-2 border-zinc-400 rounded-3xl p-2.5 hover:border-white"
           >
+          <GoogleIcon className="mr-2"/>
             Continuar com o google
           </button>
           <button
             type="button"
-            className="text-white font-semibold border-2 border-zinc-400 rounded-3xl p-1 hover:border-white"
+            className="text-white font-semibold border-2 border-zinc-400 rounded-3xl p-2.5 hover:border-white"
           >
+            <FacebookOutlinedIcon className="mr-2"/>
             Continuar com o facebook
           </button>
           <button
             type="button"
-            className="text-white font-semibold border-2 border-zinc-400 rounded-3xl p-1 hover:border-white"
+            className="text-white font-semibold border-2 border-zinc-400 rounded-3xl p-2.5 hover:border-white"
           >
+            <AppleIcon className="mr-2"/>
             Continuar com a Apple
           </button>
           <button
@@ -34,27 +41,27 @@ export default function LoginPage() {
           </button>
         </div>
 
-        <hr className="border-zinc-400 w-full" />
+        <hr className="border-zinc-900 w-full m-10" />
 
-        <div className="w-full flex flex-col space-y-4 px-16">
-          <label htmlFor="email-input" className="text-white font-semibold">
+        <div className="w-full flex flex-col px-28">
+          <label htmlFor="email-input" className="mb-2 text-white font-semibold">
             E-mail ou nome de usuário
           </label>
           <input
             id="email-input"
             type="email"
             placeholder="Email ou nome de usuário"
-            className="w-full py-2 px-5 text-white text-sm rounded-sm outline-white bg-[#131313]"
+            className="w-full py-2 px-5 text-white text-sm rounded-sm bg-[#131313] border-2 border-zinc-400 hover:border-white focus:border-white focus:outline-none"
           />
 
-          <label htmlFor="password-input" className="text-white font-semibold">
+          <label htmlFor="password-input" className="mt-4 mb-2 text-white font-semibold">
             Senha
           </label>
           <input
             id="password-input"
             type="password"
             placeholder="Senha"
-            className="w-full py-2 px-5 text-white text-sm rounded-sm outline-white bg-[#131313]"
+            className="w-full py-2 px-5 text-white text-sm rounded-sm bg-[#131313] border-2 border-zinc-400 hover:border-white focus:border-white focus:outline-none"
           />
 
           <label className="relative inline-flex items-center">
@@ -67,7 +74,7 @@ export default function LoginPage() {
 
           <button
             type="button"
-            className="h-10 w-full text-white font-semibold bg-[#1db954] rounded-3xl outline-white"
+            className="h-10 w-full mt-10 text-white font-semibold bg-[#1db954] rounded-3xl outline-white hover:border-2 hover:border-white"
           >
             Entrar
           </button>
@@ -80,9 +87,9 @@ export default function LoginPage() {
           </Link>
         </div>
 
-        <hr className="border-zinc-400 w-full" />
+        <hr className="border-zinc-900 w-full" />
 
-        <p className="text-zinc-400">
+        <p className="text-zinc-400 pb-10">
           Não tem uma conta?
           <Link
             href="#!"
