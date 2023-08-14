@@ -9,22 +9,24 @@ import AppleIcon from "@mui/icons-material/Apple";
 export default function LoginPage() {
   return (
     <main className="h-screen bg-gradient-to-b from-zinc-900">
-      <header className="bg-black">
+      <header className="hidden md:block bg-black">
         <nav className="flex m-auto max-w-[1280px] p-10 mb-6">
           <Image src={Svg.SpotifyLogo} alt="spotify-logo" />
         </nav>
       </header>
 
       <form className="flex flex-col bg-black w-[700px] h-[950px] mx-auto py-14 px-20 rounded-md items-center">
+        <Image src={Svg.SpotifyLogo} alt="spotify-logo" className="flex mb-14 md:hidden"/>
+
         <h1 className="text-white font-bold text-[40px]">Entrar no Spotify</h1>
 
-        <ul className="flex flex-col space-y-2 mt-10 mb-2 px-32">
+        <ul className="flex flex-col space-y-2 mt-10 mb-2 px-8 md:px-32">
           <li>
             <button
               type="button"
               className="text-white font-semibold border-2 border-zinc-400 rounded-3xl w-full hover:border-white flex px-4 py-2"
             >
-              <GoogleIcon className="" />
+              <GoogleIcon />
               <span className="mx-auto">Continuar com o google</span>
             </button>
           </li>
@@ -44,7 +46,7 @@ export default function LoginPage() {
               type="button"
               className="text-white font-semibold border-2 border-zinc-400 rounded-3xl w-full hover:border-white flex px-4 py-2"
             >
-              <AppleIcon className="" />
+              <AppleIcon />
               <span className="mx-auto">Continuar com a apple</span>
             </button>
           </li>
@@ -52,7 +54,7 @@ export default function LoginPage() {
           <li>
             <button
               type="button"
-              className="text-white font-semibold border-2 border-zinc-400 rounded-full w-full hover:border-white"
+              className="px-8 py-2 text-white font-semibold border-2 border-zinc-400 rounded-full w-full hover:border-white"
             >
               Continuar com um número de telefone
             </button>
