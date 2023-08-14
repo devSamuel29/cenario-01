@@ -1,4 +1,7 @@
+import * as Svg from "@/public/svg";
+
 import Link from "next/link";
+import Image from "next/image";
 import GoogleIcon from "@mui/icons-material/Google";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import AppleIcon from "@mui/icons-material/Apple";
@@ -6,7 +9,13 @@ import AppleIcon from "@mui/icons-material/Apple";
 export default function LoginPage() {
   return (
     <main className="h-screen bg-gradient-to-b from-zinc-900">
-      <form className="flex flex-col bg-black w-[700px] h-full mx-auto py-14 px-20 rounded-md items-center">
+      <header className="bg-black">
+        <nav className="flex m-auto max-w-[1280px] p-10 mb-6">
+          <Image src={Svg.SpotifyLogo} alt="spotify-logo" />
+        </nav>
+      </header>
+
+      <form className="flex flex-col bg-black w-[700px] h-[950px] mx-auto py-14 px-20 rounded-md items-center">
         <h1 className="text-white font-bold text-[40px]">Entrar no Spotify</h1>
 
         <ul className="flex flex-col space-y-2 mt-10 mb-2 px-32">
