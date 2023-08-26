@@ -16,7 +16,11 @@ export default function LoginPage() {
       </header>
 
       <form className="flex flex-col bg-black w-[700px] h-[950px] mx-auto py-14 px-20 rounded-md items-center">
-        <Image src={Svg.SpotifyLogo} alt="spotify-logo" className="flex mb-14 md:hidden"/>
+        <Image
+          src={Svg.SpotifyLogo}
+          alt="spotify-logo"
+          className="flex mb-14 md:hidden"
+        />
 
         <h1 className="text-white font-bold text-[40px]">Entrar no Spotify</h1>
 
